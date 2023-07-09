@@ -1,0 +1,16 @@
+img{
+    max-width: 400px;
+    max-height: 2000px;
+}
+
+
+
+.card-container{
+    display: grid;
+    align-items: center;
+    
+    grid-template-areas: 
+    "card card card"
+    "card card card"
+    "card card card"
+}
