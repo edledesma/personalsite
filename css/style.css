@@ -14,3 +14,7 @@ img{
 main{
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(126,23,209,1) 21%, rgba(165,24,180,1) 100%);
 }
+
+h4{
+    font-weight: bold;
+}
