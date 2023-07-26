@@ -1,99 +1,249 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport"
         content="width=device-width, user-scalable=none, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <title>WIP</title>
+    <title>EDLedesma</title>
+    <link rel="icon" type="image/x-icon" href="img/ico.ico">
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/2f3fe1b3fa.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <div class="card-container">
-        <div class="card col-md-4" style="width:400px">
-            <img class="card-img-top" src="./img/1.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Cait acostada</h4>
-                <p class="card-text">Cait?</p>
-            </div>
-        </div>
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="./img/2.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Cait tirada</h4>
-                <p class="card-text">Cait?</p>
-            </div>
-        </div>
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="./img/3.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Cait sentada</h4>
-                <p class="card-text">Cait?</p>
-            </div>
-        </div>
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="./img/4.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Cait alerta</h4>
-                <p class="card-text">Cait?</p>
-            </div>
-        </div>
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="./img/5.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Cait 5</h4>
-                <p class="card-text">Cait?</p>
-            </div>
-        </div>
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="./img/6.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Cait posada</h4>
-                <p class="card-text">Cait?</p>
-            </div>
-        </div>
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="./img/7.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Cait descansando</h4>
-                <p class="card-text">Cait?</p>
-            </div>
-        </div>
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="./img/8.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Cait 8</h4>
-                <p class="card-text">Cait?</p>
-            </div>
-        </div>
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="./img/9.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Cait reposando</h4>
-                <p class="card-text">Cait?</p>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.webp" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="img/"></a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Programmer, developer, educator</p>
+                <h1>Hello there! I'm <span>Emiliano David</span> <br>programmer and developer</h1>
             </div>
         </div>
     </div>
-    
-
-
-
-
-    </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <!-- ----------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row row-about">
+                <div class="about-col-1">
+                    <img src="./img/profile.png" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Dedicated educator with over 10 years of experience. I have high personal expectations in my
+                        pursuit of a new opportunity in the software development field. One of my current goals is to
+                        delve into the fascinating world of programming and gain a profound understanding of the
+                        intricacies of this ever-evolving field. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('technologies')">Technologies</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Fullstack Web Developer</span><br> Proficient in various programming languages and
+                                technologies to build fully functional and dynamic web applications</li>
+                            <li><span>Education</span><br> Educator specializing in the field of computer science,
+                                responsible for teaching, conducting research, and guiding students in their academic
+                                and professional pursuits related to computing and technology</li>
+                            <li><span>Graphic Designer</span><br> Creative professional, skilled in using visual elements
+                                and various design tools</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="technologies">
+                        <div class="div-technologies">
+                            <div><img src="img/html.webp">
+                                <p>HTML</p>
+                                </li>
+                            </div>
+                            <div><img src="img/css.webp">
+                                <p>CSS</p>
+                                </li>
+                            </div>
+                            <div><img src="img/js.webp">
+                                <p>Javascript</p>
+                                </li>
+                            </div>
+                            <div><img src="img/python.webp">
+                                <p>Python</p>
+                                </li>
+                            </div>
+                            <div><img src="img/java.webp">
+                                <p>Java</p>
+                                </li>
+                            </div>
+                            <div><img src="img/bootstrap.webp">
+                                <p>Bootstraps</p>
+                                </li>
+                            </div>
+                            <div><img src="img/git.webp">
+                                <p>GIT</p>
+                                </li>
+                            </div>
+                            <div><img src="img/flask.webp">
+                                <p>Flask</p>
+                                </li>
+                            </div>
+                            <div><img src="img/sql.webp">
+                                <p>SQL</p>
+                                </li>
+                            </div>
+                            <div><img src="img/vue.webp">
+                                <p>Vue</p>
+                                </li>
+                            </div>
+                            <div><img src="img/photoshop.webp">
+                                <p>Photoshop</p>
+                                </li>
+                            </div>
+                            <div><img src="img/illustrator.webp">
+                                <p>Illustrator</p>
+                                </li>
+                            </div>
+                            <div><img src="img/premiere.webp">
+                                <p>Premiere</p>
+                                </li>
+                            </div>
+                            <div><img src="img/aftereffects.webp">
+                                <p>After Effects</p>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2013 - Current</span><br> Professor, teaching computer science and programming
+                            </li>
+                            <li><span>2011 - 2012</span><br> Administrator and assistant supervisor</li>
+                            <li><span>2009 - 2010</span><br> Temporary Staff</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br> University of the People - Bachelor's Degree in Computer
+                                Science, Major in Computer science</li>
+                            <li><span>2015 - 2020</span><br> National University of Lujan - Bachelor's Degree in Science
+                                of Information Systems </li>
+                            <li><span>2011 - 2015</span><br> National University of Lujan - Bachelor's Degree in
+                                Environmental Sciences </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------services-------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Build and design interactive user interfaces for websites and applications utilizing HTML, CSS, Javascript, Vue and more</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Software development</h2>
+                    <p>Develop server-side applications, databases, and manage server infrastructure working with Python, Java, SQL and more</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Create visual concepts, designs, and layouts for various media using Photoshop, Illustrator,Premiere Pro, After Effects and more</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/site1.webp">
+                    <div class="layer">
+                        <h3>Dog Shelter Website</h3>
+                            <p>Rescue, care, and find loving homes for abandoned or stray dogs, promoting responsible pet ownership and animal welfare.</p>
+                            <a href="https://notallme.github.io/TPO-CodoACodo/index.html"
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/site2.webp">
+                    <div class="layer">
+                        <h3>Check my github</h3>
+                        <p>Explore my GitHub for exciting projects and code! Discover innovative solutions and contributions in various domains. </p>
+                        <a href="https://github.com/Notallme"
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/site4.webp">
+                    <div class="layer">
+                        <h3>Java App</h3>
+                        <p>Comming soon! Stay tuned.</p>
+                        <a href="" class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>ledesma@outlook.com.ar</p>
+                    <p><i class="fa-solid fa-phone"></i>+54 9 11 6264-9595</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Notallme"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/edledesma/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="img/profile.png" download class="btn btn-download">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="text" name="Email" placeholder="Your email" required>
+                        <input type="text" name="Phone" placeholder="Your phone number (optional)">
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn-download">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>©copyright by Emiliano David Ledesma - EDLedesma</p>
+    </div>
+    <script src="./js/contents.js"></Script>
 </body>
 
 </html>
