@@ -166,9 +166,9 @@ nav ul li a:hover::after {
 .div-technologies {
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
     grid-template-rows: 5.8rem;
-    grid-auto-rows: 6.875rem;
+    grid-auto-rows: 9rem;
     place-items: center;
 }
 
@@ -449,7 +449,7 @@ nav .fa-solid {
     }
 
     nav ul {
-        background: #ff004f;
+        background: #885d77;
         position: fixed;
         top: 0;
         right: -12.5rem;

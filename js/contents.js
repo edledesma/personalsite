@@ -30,37 +30,37 @@ form.addEventListener('submit', e => {
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             msg.innerHTML = "Messege sent successfully"
-            setTimeout(function(){
+            setTimeout(function () {
                 msg.innerHTML = ""
-            },5000)   
-            form.reset()         
+            }, 5000)
+            form.reset()
         })
         .catch(error => console.error('Error!', error.message))
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
     var rows = {};
-    
-    $('.div-technologies div').each(function(index) {
-      var rowOffset = this.offsetTop;
-      if (!rows[rowOffset]) {
-        rows[rowOffset] = [];
-      }
-      rows[rowOffset].push($(this));
-    });
-    
-    for (var row in rows) {
-      var maxHeight = 0;
-      $(rows[row]).each(function() {
-        $(this).css('height', 'auto'); // Reset the height to auto before finding the tallest element
-        var height = $(this).outerHeight();
-        if (height > maxHeight) {
-          maxHeight = height;
+
+    $('.div-technologies div').each(function (index) {
+        var rowOffset = this.offsetTop;
+        if (!rows[rowOffset]) {
+            rows[rowOffset] = [];
         }
-      });
-      
-      $(rows[row]).each(function() {
-        $(this).css('height', maxHeight + 'px'); // Set the height to the tallest element's height for each element in the row
-      });
+        rows[rowOffset].push($(this));
+    });
+
+    for (var row in rows) {
+        var maxHeight = 0;
+        $(rows[row]).each(function () {
+            $(this).css('height', 'auto'); // Reset the height to auto before finding the tallest element
+            var height = $(this).outerHeight();
+            if (height > maxHeight) {
+                maxHeight = height;
+            }
+        });
+
+        $(rows[row]).each(function () {
+            $(this).css('height', maxHeight + 'px'); // Set the height to the tallest element's height for each element in the row
+        });
     }
-  });
+});
