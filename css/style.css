@@ -424,6 +424,11 @@ form .btn-download {
     margin-top: 1.25rem;
 }
 
+.attributions{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /* ----------responsivness--------- */
 
 nav .fa-solid {
