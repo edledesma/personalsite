@@ -37,7 +37,7 @@ nav {
 }
 
 .logo {
-    width:20vw;
+    width: 20vw;
 }
 
 nav ul li {
@@ -68,10 +68,26 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+.languages {
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.languages img {
+    width: 2.5rem;
+}
+
+.lang-container {
+    display: flex;
+    margin-top: 0;
+    justify-content: flex-end;
+}
+
+
 .header-text {
     margin-top: 20rem;
     font-size: 1.875rem;
-    
+
 }
 
 .header-text h1 {
@@ -81,10 +97,68 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     color: #2a0e30;
-    
+
+}
+/* --------dropdown-------- */
+
+.dropbtn {
+    background: transparent;
+    color: white;
+    padding: 5px;
+    font-size: 1.125rem;
+    border: none;
+    cursor: pointer;
 }
 
-/* ----------about--------- */
+.dropbtn img {
+    width: 2rem;
+    margin: -0.6rem 0.5rem;
+
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-width: 160px;
+    padding: 0.5rem 0 0.5rem 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dropdown-content div {
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+}
+
+
+.dropdown-content div:hover {
+    background-color: #f1f1f1;
+}
+
+
+.dropdown-content img {
+    width: 1.875rem;
+    margin-right: .625rem;
+}
 
 #about {
     padding: 5rem 0;
@@ -103,7 +177,7 @@ nav ul li a:hover::after {
 
 .about-col-1 img {
     width: 100%;
-    border:solid 5px #885d77;
+    border: solid 5px #885d77;
     border-radius: .9375rem;
 }
 
@@ -156,6 +230,16 @@ nav ul li a:hover::after {
     font-size: .875rem;
 }
 
+.tab-contents .translate ul li {
+    list-style: none;
+    margin: .625rem 0;
+}
+
+.tab-contents .translate ul li span {
+    color: #885d77;
+    font-size: .875rem;
+}
+
 .tab-contents {
     display: none;
 }
@@ -181,7 +265,6 @@ nav ul li a:hover::after {
 .div-technologies div {
     text-align: left;
     align-items: center;
-    border: solid 0px red;
     height: 6.875rem;
     height: 100%;
     display: flex;
@@ -424,7 +507,7 @@ form .btn-download {
     margin-top: 1.25rem;
 }
 
-.attributions{
+.attributions {
     text-decoration: none;
     color: #ffffff;
 }
@@ -441,7 +524,7 @@ nav .fa-solid {
     }
 
     .logo {
-        width:50vw;
+        width: 50vw;
     }
 
     .header-text {
@@ -521,3 +604,4 @@ nav .fa-solid {
     }
 
 }
+

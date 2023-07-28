@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, user-scalable=none, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=none, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>EDLedesma</title>
     <link rel="icon" type="image/x-icon" href="img/ico.ico">
     <link rel="stylesheet" href="./css/style.css" />
@@ -18,27 +17,43 @@
 </head>
 
 <body>
+
     <div id="header">
         <div class="container">
             <nav>
                 <img src="img/logo.webp" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="img/"></a></li>
+                    <li><a href="#header" class="translate" id="link-home">Home</a></li>
+                    <li><a href="#about" class="translate" id="link-about">About</a></li>
+                    <li><a href="#services" class="translate" id="link-services">Services</a></li>
+                    <li><a href="#portfolio" class="translate" id="link-portfolio">Portfolio</a></li>
+                    <li><a href="#contact" class="translate" id="link-contact">Contact</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropdown">
+                                <button id="languageButton" class="dropbtn translate"></button>
+                                <div class="dropdown-content">
+                                    <div onclick="changeLanguage('#en')" class="languages"><img src="img/english.webp">
+                                        English</div>
+                                    <div onclick="changeLanguage('#es')" class="languages"><img src="img/spanish.webp">
+                                        Español</div>
+                                    <div onclick="changeLanguage('#pt')" class="languages"><img
+                                            src="img/portuguese.webp">Português</div>
+                                </div>
+                            </div>
+                    </li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Programmer, developer, educator</p>
-                <h1>Hello there! I'm <span>Emiliano David</span> <br>programmer and developer</h1>
+                <p id="description" class="translate">Programmer, developer, educator</p>
+                <h1 id="welcome" class="translate">Hello there! I'm <span>Emiliano David</span> <br>programmer and
+                    developer</h1>
             </div>
         </div>
     </div>
+
     <div id="about">
         <div class="container">
             <div class="row row-about">
@@ -46,19 +61,24 @@
                     <img src="./img/profile.png" alt="Profile Picture">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p> Dedicated educator with over 10 years of experience. I have high personal expectations in my
+                    <h1 class="sub-title translate" id="about-me-title">About Me</h1>
+                    <p id="about-me-description" class="translate"> Dedicated educator with over 10 years of experience.
+                        I have high
+                        personal expectations in my
                         pursuit of a new opportunity in the software development field. One of my current goals is to
                         delve into the fascinating world of programming and gain a profound understanding of the
                         intricacies of this ever-evolving field. </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                        <p class="tab-links" onclick="openTab('technologies')">Technologies</p>
-                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links active-link translate" onclick="openTab('skills')" id="titles-skills">Skills
+                        </p>
+                        <p class="tab-links translate" onclick="openTab('technologies')" id="titles-tools">Tools</p>
+                        <p class="tab-links translate" onclick="openTab('experience')" id="titles-experience">Experience
+                        </p>
+                        <p class="tab-links translate" onclick="openTab('education')" id="titles-education">Education
+                        </p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
+                        <ul id="skill-list" class="translate">
                             <li><span>Full-stack Web Developer</span><br> Proficient in various programming languages
                                 and
                                 technologies to build fully functional and dynamic web applications</li>
@@ -80,16 +100,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
+                    <div class="tab-contents " id="experience">
+                        <ul class="translate" id="experience-list">
                             <li><span>2013 - Current</span><br> Professor, teaching computer science and programming
                             </li>
                             <li><span>2011 - 2012</span><br> Administrator and assistant supervisor</li>
                             <li><span>2009 - 2010</span><br> Temporary Staff</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
+                    <div class="tab-contents translate" id="education">
+                        <ul class="translate" id="education-list">
                             <li><span>2022 - Current</span><br> University of the People - Bachelor's Degree in Computer
                                 Science, Major in Computer science</li>
                             <li><span>2015 - 2020</span><br> National University of Lujan - Bachelor's Degree in Science
@@ -104,41 +124,45 @@
     </div>
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My services</h1>
+            <h1 class="sub-title translate" id="my-services">My services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Build and design interactive user interfaces for websites and applications utilizing HTML, CSS,
+                    <h2 id="web-design" class="translate">Web design</h2>
+                    <p id="web-design-description" class="translate">Build and design interactive user interfaces for
+                        websites and applications utilizing HTML, CSS,
                         Javascript, Vue and more</p>
-                    <a href="#">Learn more</a>
+                    <a href="#" id="learn-more" class="translate">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
-                    <h2>Software development</h2>
-                    <p>Develop server-side applications, databases, and manage server infrastructure working with
+                    <h2 id="software-development" class="translate">Software development</h2>
+                    <p id="software-description" class="translate">Develop server/client-side applications, databases,
+                        and manage server infrastructure working with
                         Python, Java, SQL and more</p>
-                    <a href="#">Learn more</a>
+                    <a href="#" id="learn-more" class="translate">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>Graphic Design</h2>
-                    <p>Create visual concepts, designs, and layouts for various media using Photoshop,
-                        Illustrator,Premiere Pro, After Effects and more</p>
-                    <a href="#">Learn more</a>
+                    <h2 id="graphic-design" class="translate">Graphic design</h2>
+                    <p id="graphic-design-description" class="translate">Create visual concepts, designs, and layouts
+                        for various media using Photoshop,
+                        Illustrator, Premiere Pro, After Effects and more</p>
+                    <a href="#" id="learn-more" class="translate">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My work</h1>
+            <h1 class="sub-title translate" id="my-work">My work</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="img/site1.webp">
                     <div class="layer">
-                        <h3>Dog Shelter Website</h3>
-                        <p>Rescue, care, and find loving homes for abandoned or stray dogs, promoting responsible pet
+                        <h3 class="translate" id="site-1-name">Dog Shelter Website</h3>
+                        <p class="translate" id="site-1-desc">Rescue, care, and find loving homes for abandoned or stray
+                            dogs, promoting responsible pet
                             ownership and animal welfare.</p>
                         <a href="https://notallme.github.io/TPO-CodoACodo/index.html" target="_blank"
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -147,8 +171,9 @@
                 <div class="work">
                     <img src="img/site2.webp">
                     <div class="layer">
-                        <h3>Check my github</h3>
-                        <p>Explore my GitHub for exciting projects and code! Discover innovative solutions and
+                        <h3 class="translate" id="site-2-name">Check out my github</h3>
+                        <p class="translate" id="site-2-desc">Explore my GitHub for exciting projects and code! Discover
+                            innovative solutions and
                             contributions in various domains. </p>
                         <a href="https://github.com/Notallme" target="_blank"
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
@@ -157,20 +182,20 @@
                 <div class="work">
                     <img src="img/site4.webp">
                     <div class="layer">
-                        <h3>Java App</h3>
-                        <p>Comming soon! Stay tuned.</p>
+                        <h3 class="translate" id="site-3-name">Java App</h3>
+                        <p class="translate" id="site-3-desc">Comming soon! Stay tuned.</p>
                         <a href="" class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
+            <a href="#" class="btn translate" id="see-more-btn">See more</a>
         </div>
     </div>
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h1 class="sub-title translate" id="contact-me">Contact Me</h1>
                     <p><i class="fa-solid fa-envelope"></i>ledesma@outlook.com.ar</p>
                     <p><i class="fa-solid fa-phone"></i>+54 9 11 6264-9595</p>
                     <div class="social-icons">
@@ -179,15 +204,19 @@
                                 class="fa-brands fa-linkedin"></i></a>
                         <a href="https://wa.me/5491162649595" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
-                    <a href="" download class="btn btn-download">Download CV</a>
+                    <a href="" download class="btn btn-download translate" id="download-cv-btn">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="text" name="Email" placeholder="Your email" required>
-                        <input type="text" name="Phone" placeholder="Your phone number (optional)">
-                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn-download">Submit</button>
+                        <input type="text" name="Name" placeholder="Your name" id="input-name" class="translate"
+                            required>
+                        <input type="text" name="Email" placeholder="Your email" id="input-email" class="translate"
+                            required>
+                        <input type="text" name="Phone" placeholder="Your phone number (optional)" id="input-phone"
+                            class="translate">
+                        <textarea name="Message" rows="6" placeholder="Your message" id="textarea-message"
+                            class="translate"></textarea>
+                        <button type="submit" class="btn btn-download translate" id="submit-btn">Submit</button>
                     </form>
                     <span id="msg"></span>
                 </div>
@@ -196,11 +225,12 @@
     </div>
     <div class="copyright">
         <p>©Copyright by Emiliano David Ledesma - EDLedesma - <a href="https://www.flaticon.com/" target="_blank"
-                class="attributions">Icons courtesy of Flaticon</a></p>
+                class="attributions translate" id="attributions">Icons courtesy of Flaticon</a></p>
     </div>
     <script src="./js/contents.js"></Script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./js/vue.js"></script>
+    <script src="./js/translator.js"></script>
 </body>
 
 </html>
