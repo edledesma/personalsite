@@ -1,0 +1,72 @@
+{
+    "technologies": [
+        {
+            "id": 1,
+            "name": "HTML",
+            "icon": "./img/html.webp"
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "icon": "./img/css.webp"
+        },
+        {
+            "id": 3,
+            "name": "JavaScript",
+            "icon": "./img/js.webp"
+        },
+        {
+            "id": 4,
+            "name": "Python",
+            "icon": "./img/Python.webp"
+        },
+        {
+            "id": 5,
+            "name": "Java",
+            "icon": "./img/java.webp"
+        },
+        {
+            "id": 6,
+            "name": "Bootstrap",
+            "icon": "./img/bootstrap.webp"
+        }, {
+            "id": 7,
+            "name": "GIT",
+            "icon": "./img/git.webp"
+        },
+        {
+            "id": 8,
+            "name": "Flask",
+            "icon": "./img/flask.webp"
+        },
+        {
+            "id": 9,
+            "name": "SQL",
+            "icon": "./img/sql.webp"
+        },
+        {
+            "id": 10,
+            "name": "Vue",
+            "icon": "./img/vue.webp"
+        },
+        {
+            "id": 11,
+            "name": "Photoshop",
+            "icon": "./img/photoshop.webp"
+        },
+        {
+            "id": 12,
+            "name": "Illustrator",
+            "icon": "./img/illustrator.webp"
+        },
+        {
+            "id": 13,
+            "name": "Premiere",
+            "icon": "./img/premiere.webp"
+        }, {
+            "id": 14,
+            "name": "After Effects",
+            "icon": "./img/aftereffects.webp"
+        }
+    ]
+}

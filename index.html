@@ -39,7 +39,6 @@
             </div>
         </div>
     </div>
-    <!-- ----------about--------- -->
     <div id="about">
         <div class="container">
             <div class="row row-about">
@@ -60,72 +59,24 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Full-stack Web Developer</span><br> Proficient in various programming languages and
+                            <li><span>Full-stack Web Developer</span><br> Proficient in various programming languages
+                                and
                                 technologies to build fully functional and dynamic web applications</li>
                             <li><span>Education</span><br> Educator specializing in the field of computer science,
                                 responsible for teaching, conducting research, and guiding students in their academic
                                 and professional pursuits related to computing and technology</li>
-                            <li><span>Graphic Designer</span><br> Creative professional, skilled in using visual elements
+                            <li><span>Graphic Designer</span><br> Creative professional, skilled in using visual
+                                elements
                                 and various design tools</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="technologies">
-                        <div class="div-technologies">
-                            <div><img src="img/html.webp">
-                                <p>HTML</p>
-                                </li>
-                            </div>
-                            <div><img src="img/css.webp">
-                                <p>CSS</p>
-                                </li>
-                            </div>
-                            <div><img src="img/js.webp">
-                                <p>Javascript</p>
-                                </li>
-                            </div>
-                            <div><img src="img/python.webp">
-                                <p>Python</p>
-                                </li>
-                            </div>
-                            <div><img src="img/java.webp">
-                                <p>Java</p>
-                                </li>
-                            </div>
-                            <div><img src="img/bootstrap.webp">
-                                <p>Bootstrap</p>
-                                </li>
-                            </div>
-                            <div><img src="img/git.webp">
-                                <p>GIT</p>
-                                </li>
-                            </div>
-                            <div><img src="img/flask.webp">
-                                <p>Flask</p>
-                                </li>
-                            </div>
-                            <div><img src="img/sql.webp">
-                                <p>SQL</p>
-                                </li>
-                            </div>
-                            <div><img src="img/vue.webp">
-                                <p>Vue</p>
-                                </li>
-                            </div>
-                            <div><img src="img/photoshop.webp">
-                                <p>Photoshop</p>
-                                </li>
-                            </div>
-                            <div><img src="img/illustrator.webp">
-                                <p>Illustrator</p>
-                                </li>
-                            </div>
-                            <div><img src="img/premiere.webp">
-                                <p>Premiere</p>
-                                </li>
-                            </div>
-                            <div><img src="img/aftereffects.webp">
-                                <p>After Effects</p>
-                                </li>
+                        <div id="app">
+                            <div class="div-technologies">
+                                <div v-for="technology in technologies" :key="technology.id">
+                                    <img :src="technology.icon">
+                                    <p>{{ technology.name }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -151,7 +102,6 @@
             </div>
         </div>
     </div>
-    <!-- ----------services-------- -->
     <div id="services">
         <div class="container">
             <h1 class="sub-title">My services</h1>
@@ -159,25 +109,27 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Build and design interactive user interfaces for websites and applications utilizing HTML, CSS, Javascript, Vue and more</p>
+                    <p>Build and design interactive user interfaces for websites and applications utilizing HTML, CSS,
+                        Javascript, Vue and more</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
                     <h2>Software development</h2>
-                    <p>Develop server-side applications, databases, and manage server infrastructure working with Python, Java, SQL and more</p>
+                    <p>Develop server-side applications, databases, and manage server infrastructure working with
+                        Python, Java, SQL and more</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
                     <h2>Graphic Design</h2>
-                    <p>Create visual concepts, designs, and layouts for various media using Photoshop, Illustrator,Premiere Pro, After Effects and more</p>
+                    <p>Create visual concepts, designs, and layouts for various media using Photoshop,
+                        Illustrator,Premiere Pro, After Effects and more</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ----------portfolio------- -->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My work</h1>
@@ -186,16 +138,18 @@
                     <img src="img/site1.webp">
                     <div class="layer">
                         <h3>Dog Shelter Website</h3>
-                            <p>Rescue, care, and find loving homes for abandoned or stray dogs, promoting responsible pet ownership and animal welfare.</p>
-                            <a href="https://notallme.github.io/TPO-CodoACodo/index.html" target="_blank"
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <p>Rescue, care, and find loving homes for abandoned or stray dogs, promoting responsible pet
+                            ownership and animal welfare.</p>
+                        <a href="https://notallme.github.io/TPO-CodoACodo/index.html" target="_blank"
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="img/site2.webp">
                     <div class="layer">
                         <h3>Check my github</h3>
-                        <p>Explore my GitHub for exciting projects and code! Discover innovative solutions and contributions in various domains. </p>
+                        <p>Explore my GitHub for exciting projects and code! Discover innovative solutions and
+                            contributions in various domains. </p>
                         <a href="https://github.com/Notallme" target="_blank"
                             class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
@@ -212,7 +166,6 @@
             <a href="#" class="btn">See more</a>
         </div>
     </div>
-    <!-- ----------contact-------- -->
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -222,7 +175,8 @@
                     <p><i class="fa-solid fa-phone"></i>+54 9 11 6264-9595</p>
                     <div class="social-icons">
                         <a href="https://github.com/Notallme" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/edledesma/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/edledesma/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="https://wa.me/5491162649595" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                     <a href="" download class="btn btn-download">Download CV</a>
@@ -241,11 +195,12 @@
         </div>
     </div>
     <div class="copyright">
-        <p>©Copyright by Emiliano David Ledesma - EDLedesma - <a href="https://www.flaticon.com/" target="_blank" class="attributions">Icons courtesy of Flaticon</a></p>
-        
+        <p>©Copyright by Emiliano David Ledesma - EDLedesma - <a href="https://www.flaticon.com/" target="_blank"
+                class="attributions">Icons courtesy of Flaticon</a></p>
     </div>
     <script src="./js/contents.js"></Script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/vue.js"></script>
 </body>
 
 </html>
