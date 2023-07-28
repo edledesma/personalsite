@@ -16,9 +16,6 @@ const { createApp } = Vue;
                         })
                         .catch(error => alert("There has been an error " + error))
                 },
-                getImg(imagen) {
-                    return imagen;
-                },
             },
             created() {
                 this.fetchData();

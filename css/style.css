@@ -493,13 +493,12 @@ nav .fa-solid {
 
     .about-col-1 {
         margin-bottom: 1.875rem;
-        font-size: 1rem;
-        margin: 0;
-        overflow-x: hidden;
     }
 
     .about-col-2 {
         font-size: 0.875rem;
+        margin: 0;
+        overflow-x: hidden;
     }
 
     .tab-links {
