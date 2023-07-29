@@ -589,6 +589,23 @@ nav .fa-solid {
         margin-right: 1.25rem;
     }
 
+    .tab-links.active-link::after {
+        width: 10%;
+    }
+    .tab-titles {
+        display: block;
+    }
+
+    .tab-links::after {
+        content: '';
+        width: 0;
+        height: 0.1875rem;
+        background: #885d77;
+        position: absolute;
+        left: 0;
+        bottom: -1%;
+        transition: 0.5s;
+    }
     .contact-left,
     .contact-right {
         flex-basis: 100%;
@@ -604,4 +621,3 @@ nav .fa-solid {
     }
 
 }
-
