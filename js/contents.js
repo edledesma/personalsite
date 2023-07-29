@@ -52,7 +52,7 @@ $(document).ready(function () {
     for (var row in rows) {
         var maxHeight = 0;
         $(rows[row]).each(function () {
-            $(this).css('height', 'auto'); // Reset the height to auto before finding the tallest element
+            $(this).css('height', 'auto'); 
             var height = $(this).outerHeight();
             if (height > maxHeight) {
                 maxHeight = height;
@@ -60,7 +60,7 @@ $(document).ready(function () {
         });
 
         $(rows[row]).each(function () {
-            $(this).css('height', maxHeight + 'px'); // Set the height to the tallest element's height for each element in the row
+            $(this).css('height', maxHeight + 'px');
         });
     }
 });

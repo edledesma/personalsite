@@ -1,7 +1,6 @@
-// Language data URL (modify this with the correct path to your languages.json)
 const languageDataURL = "./js/languages.json";
 
-let language = {}; // Empty object to store language data
+let language = {}; 
 
 function updateLanguageContent(lang) {
     if (language[lang]) {
@@ -39,11 +38,10 @@ window.onload = function () {
         };
     }
 
-    // Fetch language data from the JSON file
     fetch(languageDataURL)
         .then((response) => response.json())
         .then((data) => {
-            language = data; // Store the fetched language data in the 'language' object
+            language = data;
             var langFromHash = window.location.hash.substr(1);
             var browserLang = navigator.language.substring(0, 2);
             var defaultLang = langFromHash || browserLang || "en";
