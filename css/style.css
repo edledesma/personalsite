@@ -22,7 +22,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/background.webp);
+    /* background-image: url(../img/background.webp); */
     background-size: cover;
     background-position: center;
 }
@@ -628,5 +628,11 @@ nav .fa-solid {
         grid-template-columns: repeat(auto-fit, minmax(6.25rem, 1fr));
         grid-auto-rows: 6.875rem;
     }
+}
 
+@media only screen and (min-width:600px) {
+
+    #header {
+        background-image: url(../img/background.webp);
+    }
 }
