@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=none, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <title>EDLedesma</title>
     <link rel="icon" type="image/x-icon" href="img/ico.ico">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css"/>
     <script src="https://kit.fontawesome.com/2f3fe1b3fa.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,7 @@
             <nav>
                 <img src="img/logo.webp" class="logo" alt="EDLedesma logo">
                 <ul id="sidemenu">
+                    <li><i class="fa-solid fa-xmark" onclick="closemenu()"></i></li>
                     <li><a href="#header" class="translate" id="link-home">Home</a></li>
                     <li><a href="#about" class="translate" id="link-about">About</a></li>
                     <li><a href="#services" class="translate" id="link-services">Services</a></li>
@@ -39,9 +40,11 @@
                                     <div onclick="changeLanguage('#pt')" class="languages"><img src="img/portuguese.webp" alt="Portugal Flag">Português</div>
                                 </div>
                             </div>
+                        <div>
                     </li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    
                 </ul>
+                
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
@@ -92,7 +95,7 @@
                         <div id="app">
                             <div class="div-technologies">
                                 <div v-for="technology in technologies" :key="technology.id">
-                                    <img :src="technology.icon">
+                                    <img :src="technology.icon" alt="Tech Icon">
                                     <p>{{ technology.name }}</p>
                                 </div>
                             </div>
@@ -163,18 +166,18 @@
                             dogs, promoting responsible pet
                             ownership and animal welfare.</p>
                         <a href="https://notallme.github.io/TPO-CodoACodo/index.html" target="_blank"
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            class="fa-solid fa-arrow-up-right-from-square"></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="img/site2.webp" alt="Portfolio Image">
+                    <img src="img/site2.webp" loading="lazy" alt="Portfolio Image">
                     <div class="layer">
-                        <h3 class="translate" loading="lazy" id="site-2-name">Check out my github</h3>
+                        <h3 class="translate" id="site-2-name">Check out my github</h3>
                         <p class="translate" id="site-2-desc">Explore my GitHub for exciting projects and code! Discover
                             innovative solutions and
                             contributions in various domains. </p>
                         <a href="https://github.com/Notallme" target="_blank"
-                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            class="fa-solid fa-arrow-up-right-from-square"></a>
                     </div>
                 </div>
                 <div class="work">
@@ -182,7 +185,7 @@
                     <div class="layer">
                         <h3 class="translate" id="site-3-name">Java App</h3>
                         <p class="translate" id="site-3-desc">Comming soon! Stay tuned.</p>
-                        <a href="" class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="" class="fa-solid fa-arrow-up-right-from-square"></a>
                     </div>
                 </div>
             </div>
