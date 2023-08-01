@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-display: swap;
+    font-family: 'Poppins', Arial;
+    font-display: fallback;
     box-sizing: border-box;
 
 }
@@ -635,4 +635,13 @@ nav .fa-solid {
     #header {
         background-image: url(../img/background.webp);
     }
+}
+
+@media only screen and (max-height:600px) {
+
+.header-text {
+    margin-top: 3rem;
+    font-size: 1.875rem;
+
+}
 }
