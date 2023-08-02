@@ -1,7 +1,7 @@
 {
 	"en": {
 
-		"languageButton": "<img src=\"img/english.webp\">Language",
+		"languageButton": "<img src=\"img/english.webp\" alt\"Britain Flag\">Language",
 		"languageName": "Language",
 		"placeholder-name": "Your name",
 		"placeholder-email": "Your email",
@@ -10,7 +10,7 @@
 	},
 	"es": {
 
-		"languageButton": "<img src=\"img/spanish.webp\">Idioma",
+		"languageButton": "<img src=\"img/spanish.webp\" alt\"Spain Flag\">Idioma",
 		"languageName": "Idioma",
 		"link-home": "Inicio",
 		"link-about": "Sobre mí",
@@ -57,7 +57,7 @@
 	},
 	"pt": {
 
-		"languageButton": "<img src=\"img/portuguese.webp\">Idioma",
+		"languageButton": "<img src=\"img/portuguese.webp\" alt=\"Portugal Flag\">Idioma",
 		"link-home": "Início",
 		"link-about": "Sobre mim",
 		"link-services": "Serviços",
