@@ -401,7 +401,6 @@ nav ul li a:hover::after {
 .layer a {
     margin-top: 1.25rem;
     color: #f7968c;
-    ;
     text-decoration: none;
     font-size: 1.125rem;
     line-height: 3.75rem;
@@ -651,3 +650,8 @@ nav .fa-solid {
 
 }
 }
+
+@media (min-width:600px) and (max-width:1200px) {
+
+}
+
