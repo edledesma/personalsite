@@ -39,6 +39,10 @@ nav {
     justify-content: space-between;
 }
 
+nav ul{
+    text-align: right;
+}
+
 .logo {
     width: 20vw;
     height: 10vh;
@@ -530,7 +534,7 @@ nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     #header {
         background-image: url(../img/background.svg);
     }
@@ -635,14 +639,14 @@ nav .fa-solid {
     }
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:800px) {
 
     #header {
         background-image: url(../img/background.svg);
     }
 }
 
-@media only screen and (max-height:600px) {
+@media only screen and (max-height:800px) {
 
 .header-text {
     margin-top: 3rem;
